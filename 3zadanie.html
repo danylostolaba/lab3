@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Lab3</title>
+</head>
+<body>
+    <script>
+	function createClickCounter() {
+		let count = 0;
+
+		return function() {
+			count++;
+			console.log(`Поточне значення лічильника: ${count}`);
+		};
+	}
+	const myCounter = createClickCounter();
+
+	myCounter();
+	myCounter();
+	myCounter();
+
+
+	</script>
+</body>
+</html>

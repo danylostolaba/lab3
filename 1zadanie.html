@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Lab3</title>
+</head>
+<body>
+    <script>
+
+	function startGreetingTimer(message, seconds, callback) {
+		const milliseconds = seconds * 1000;
+		setTimeout(() => {
+			console.log(message);
+			callback();
+		}, milliseconds);
+	}
+
+	startGreetingTimer("Привіт! Час пішов.", 5, () => {
+		alert('Time is up!');
+	});
+
+	</script>
+</body>
+</html>
